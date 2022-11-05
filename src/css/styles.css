@@ -1,10 +1,20 @@
+/*C:\Projects\tailwind\node_modules\tailwindcss\lib\css\preflight.css
+プリフライトCSSとか、ページのデフォルト設定　Htmlやbodyに設定するやつ
+https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles*/
 @tailwind base;
-/*C:\Projects\tailwind\node_modules\tailwindcss\lib\css\preflight.css*/
 
+/*
+card,btn,badge等、コンポーネント単位
+https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles*/
 @tailwind components;
 
+/*
+さらに小さい粒度のスタイル。色や形。
+*/
 @tailwind utilities;
+/*ここまでutil*/
 
+/*ボタンなのでここ*/
 @layer components {
   .btn-big {
     @apply rounded-full  px-6 py-2 text-base font-bold text-white drop-shadow-lg hover:scale-95 hover:opacity-70 hover:transition-all;
@@ -20,14 +30,15 @@
   }
 }
 
+/*色だけ定義はここ*/
 @layer utilities {
-  .fire {
+  .red {
     @apply bg-gradient-to-tr from-orange-300 to-red-600;
   }
-  .water {
+  .blue {
     @apply bg-gradient-to-tr from-green-300 to-blue-600;
   }
-  .leaf {
+  .green {
     @apply bg-gradient-to-tr from-lime-300 to-teal-600;
   }
 }
