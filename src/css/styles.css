@@ -15,4 +15,7 @@
   .btn-small {
     @apply rounded-lg px-4 py-2 text-xs font-medium text-white drop-shadow-sm hover:opacity-80 hover:transition-all;
   }
+  .btn-small-disable {
+    @apply rounded-md bg-gradient-to-tr from-gray-300 to-gray-200 px-4 py-2 text-xs text-white;
+  }
 }
