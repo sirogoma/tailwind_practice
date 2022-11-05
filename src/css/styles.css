@@ -19,3 +19,15 @@
     @apply rounded-md bg-gradient-to-tr from-gray-300 to-gray-200 px-4 py-2 text-xs text-white;
   }
 }
+
+@layer utilities {
+  .fire {
+    @apply bg-gradient-to-tr from-orange-300 to-red-600;
+  }
+  .water {
+    @apply bg-gradient-to-tr from-green-300 to-blue-600;
+  }
+  .leaf {
+    @apply bg-gradient-to-tr from-lime-300 to-teal-600;
+  }
+}
